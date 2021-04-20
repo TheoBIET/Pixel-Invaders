@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>Invader</title>
+      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   </head>
+   <body>
+      <header>
+         <h1>Pixel'Art</h1>
+         <form id="configuration">
+            <!-- Range pour le nombre de cases par colonne -->
+            <div>
+               <label for="nbOfCasesPerRow"
+                  >Nombres de Cases <span id="nbCases"></span
+               ></label>
+               <input
+                  type="range"
+                  id="nbOfCasesPerRow"
+                  name="nbOfCasesPerRow"
+                  min="8"
+                  max="28"
+                  value="28"
+               />
+            </div>
+            <!-- Range pour la taille des pixels -->
+            <div>
+               <label for="casesSize"
+                  >Taille des cases <span id="caseSize"></span
+               ></label>
+               <input
+                  type="range"
+                  id="casesSize"
+                  name="casesSize"
+                  min="1.5625"
+                  max="1.6625"
+                  value="1.5625"
+                  step="0.0025"
+               />
+            </div>
+         </form>
+      </header>
+         <main>
+            <div id="drawField"></div>
+         </main>
+         <aside id="toolbar">
+            <div class="tool" id="reset"><i class="fas fa-sync"></i></div>
+            <div class="tool" id="eraser"><i class="fas fa-eraser"></i></div>
+         </aside>
+      <div id="phone-message">
+      <p>Veuillez consulter ce site sur Desktop pour profiter au maximum de son expérience</p>
+    </div>
+      <script src="../js/app.js"></script>
+   </body>
+</html>
