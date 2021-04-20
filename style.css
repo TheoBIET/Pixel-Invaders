@@ -123,7 +123,7 @@ main {
 
 .drawableDiv {
    border: 1px solid var(--darker-main);
-   background-color: #ccc;
+   background-color: #eee;
    transition: .1s ease-in-out;
 }
 
@@ -132,6 +132,10 @@ main {
    cursor: pointer;
 }
 
+/* 
+const STYLESHEET = document.createElement('style');
+         const CSS_HOVER = `.drawableDiv:hover{ background-color: ${this.currentColor}; cursor: pointer; }`;
+         STYLESHEET.stylesheet ? STYLESHEET.stylesheet.cssText = css : STYLESHEET.appendChild(document.createTextNode(CSS_HOVER)); */
 #phone-message {
    display: none;
 }
