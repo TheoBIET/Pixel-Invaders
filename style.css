@@ -11,7 +11,7 @@ body {
    padding: 0;
    color: var(--smooth-white);
    background-color: var(--main);
-   font-family: Arial, Helvetica, sans-serif;
+   font-family: 'Press Start 2P', 'Comic Sans MS';
 }
 
 header {
@@ -35,6 +35,11 @@ header {
 
 #configuration div input {
    width: 50%;
+}
+
+#configuration span {
+   font-weight: bold;
+   text-decoration: underline;
 }
 
 aside {
